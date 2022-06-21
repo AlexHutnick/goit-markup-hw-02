@@ -1,11 +1,5 @@
-:root {
-    /* fonts */
-    --main-font: "Roboto";
-    --secondary-font: "Raleway";
-
-    /* colors */
-    --main-light-theme:#F5F4FA; 
-}
+/* 
+ 
 body {
     font-family: var(--main-font), sans-serif;
     font-size: 14px;
@@ -113,3 +107,4 @@ header {
     font-style: normal;
 }
 
+ */

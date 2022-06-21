@@ -37,6 +37,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -62,16 +63,31 @@ body {
     font-family: var(--main-font), sans-serif;
     font-size: 14px;
     line-height: 24px;
-    background: #E5E5E5; 
-}
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1170px;
-    margin: 0 auto;
+    background: #FFFFFF; 
+    
 }
 
+header {
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 94px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+.header-container {
+    padding: 24px 0px;
+}
+.logo-container {
+   margin-right: 83px;
+}
+
+.navigation-container {
+    margin-right: 331px;
+}
 /* common styles */
 .logo {
     text-decoration: none;
@@ -80,9 +96,23 @@ header {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: #212121;
+}
+.logo-prefix {
+    color: var(--accent-color);
 }
 
+.header-list-item {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+
+}
+.header-list-item:last-child {
+    margin-right: 0;
+
+}
 .header-link {
     text-decoration: none;
     font-size: 14px;
@@ -90,10 +120,29 @@ header {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #212121;
+
 }
 
-.header-list li {
+.header-group {
+    display: inline-block;
+}
+
+.header-list {
     list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.header-list-contact:first-child {
+    margin-right: 50px;
+}
+.header-list-contact {
+    display: inline-block;
+}
+
+.top-bar-link:hover,
+.top-bar-link:focus {
+    color: var(--accent-color)
 }
 
 .header-mail, .header-contact {
@@ -103,6 +152,7 @@ header {
     line-height: 16px;
     color: #757575;
     text-decoration: none;
+   
 }
 
 .header-mail:hover, 
@@ -188,6 +238,7 @@ header {
 .footer {
     background-color: #2F303A;
     font-style: normal;
+    padding: 60px 0;
 }
 
 .adress {
@@ -208,3 +259,72 @@ header {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.main-menu-list {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.main-menu-item {
+    display: inline-block;
+    margin-right: 8px;
+}
+.main-menu-item:last-child {
+    margin-right: 0;
+}
+.main-button {
+    font-family: var(--main-font), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: #212121;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+}
+.main-button:hover,
+.main-button:focus {
+    background-color: #2196F3;
+    color: #FFFFFF; 
+}
+
+.portfolio-menu {
+    list-style: none;
+    padding-bottom: 64px;
+}
+.portfolio-list .portfolio-list-item {
+    display: inline-block;
+    margin-right: 26px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+
+}
+.portfolio-list .portfolio-list-item:last-child {
+    margin-right: 0;
+}
+.work-list-title, .work-list-item {
+    padding-left: 20px;
+}
+
+.work-list-title {
+    margin-bottom: 4px;
+}
+.portfolio-list-image {
+    margin-bottom: 20px;
+}
+.footer-list {
+   list-style-type: none;
+}
+
+.footer-logo-postfix {
+    color: #FFFFFF;
+}
+.footer-logo {
+    margin-bottom: 20px;
+    display: block;
+}
+ 
