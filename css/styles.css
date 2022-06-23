@@ -40,6 +40,9 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
 :root{
 /* fonts */
 --main-font: "Roboto";
@@ -69,11 +72,11 @@ body {
 
 header {
     border-bottom: 1px solid #ECECEC;
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -96,7 +99,10 @@ header {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-txt-cl);
+    padding: 32px 0;
+    display: block;
+    
 }
 .logo-prefix {
     color: var(--accent-color);
@@ -167,6 +173,7 @@ header {
 .hero {
     background-color: #2F303A;
     padding: 200px 0;
+    text-align: center;
 }
 .hero-title {
     font-weight: 900;
@@ -178,8 +185,10 @@ header {
     color: #FFFFFF;
     max-width: 696px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 .hero-button {
+    padding: 10px 32px;
     font-family: var(--main-font), sans-serif;
     background-color: #2196F3;
     font-weight: 700;
@@ -188,6 +197,9 @@ header {
     color: #ffffff;
     padding: 10px 32px;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
 }
 
 .about-us-item-title {
@@ -212,7 +224,6 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    text-align: center;
 }
 
 .team-name {
@@ -222,6 +233,8 @@ header {
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .team-position {
@@ -231,6 +244,7 @@ header {
     letter-spacing: 0.03em;
     text-align: center;
     color: #757575;
+    padding-bottom: 30px;
 }
 
 /* common styles end */
@@ -292,16 +306,17 @@ header {
 
 .portfolio-menu {
     list-style: none;
-    padding-bottom: 64px;
 }
 .portfolio-list .portfolio-list-item {
     display: inline-block;
     margin-right: 26px;
     margin-bottom: 30px;
-    padding-bottom: 20px;
     border: 1px solid #ECECEC;
     box-sizing: border-box;
-
+    flex-wrap: wrap;
+}
+.portfolio-list-name {
+    padding: 20px 24px;
 }
 .portfolio-list .portfolio-list-item:last-child {
     margin-right: 0;
@@ -313,9 +328,7 @@ header {
 .work-list-title {
     margin-bottom: 4px;
 }
-.portfolio-list-image {
-    margin-bottom: 20px;
-}
+
 .footer-list {
    list-style-type: none;
 }
@@ -328,3 +341,52 @@ header {
     display: block;
 }
  
+.content-list {
+    list-style: none;
+
+}
+.content-list-item .content-list-title {
+    display: inline-block;
+
+}
+
+.content-list-title:not(last child) {
+    padding-right: 30px;
+
+}
+.content-list-item {
+    display: flex;
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-top: 94px;
+    margin-bottom: 94px;
+
+}
+.about-us-item-title {
+    margin-bottom: 10px;
+}
+
+.about-work-image {
+    list-style-type: none;
+}
+.about-work-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 94px;
+  
+}
+.team-container {
+    background-color: #F5F4FA;
+}
+.team-about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 94px;
+
+}
+.team-title {
+    padding-top: 94px;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
