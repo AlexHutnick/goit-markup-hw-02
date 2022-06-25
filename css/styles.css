@@ -159,7 +159,7 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #757575;
+    color:var(--secondary-txt-cl);
     text-decoration: none;
     padding: 31px 0;
     
@@ -168,7 +168,7 @@ header {
 
 .header-mail:hover, 
 .header-contact:hover {
-    color: #2196F3;
+    color:var(--accent-color);
 }
 
 .list {
@@ -195,7 +195,7 @@ header {
 .hero-button {
     padding: 10px 32px;
     font-family: var(--main-font), sans-serif;
-    background-color: #2196F3;
+    background-color:var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -215,7 +215,7 @@ header {
     color:var(--accent-color);
 }
 button.current {
-    background-color: #2196F3;
+    background-color:var(--accent-color);
     color: #FFFFFF;
 }
 .about {
@@ -227,14 +227,14 @@ button.current {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color:var(--main-txt-cl);
 }
 .about-us-item-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--secondary-txt-cl);
 }
 .section-title {
     margin-bottom: 50px;
@@ -243,7 +243,7 @@ button.current {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color:var(--main-txt-cl);
 }
 
 .team-name {
@@ -252,9 +252,8 @@ button.current {
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    color:var(--main-txt-cl);
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -263,8 +262,7 @@ button.current {
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #757575;
-    padding-bottom: 30px;
+    color:var(--secondary-txt-cl);
 }
 
 /* common styles end */
@@ -313,14 +311,14 @@ button.current {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    color: #212121;
+    color:var(--main-txt-cl);
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
 }
 .main-button:hover,
 .main-button:focus {
-    background-color: #2196F3;
+    background-color:var(--accent-color);
     color: #FFFFFF; 
 }
 
@@ -350,6 +348,18 @@ button.current {
 
 .work-list-title {
     margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color:var(--main-txt-cl)
+}
+.work-list-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color:var(--secondary-txt-cl);
 }
 
 .footer-list {
@@ -396,9 +406,6 @@ button.current {
 .about-work-list {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
-    margin-bottom: 94px;
-  
 }
 
 .team {
@@ -420,6 +427,10 @@ button.current {
 }
 .team-title {
     margin-bottom: 50px;
+}
+.team-members-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .section {
     padding: 94px 0;
