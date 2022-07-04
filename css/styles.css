@@ -141,6 +141,7 @@ header {
     list-style: none;
     text-align: center;
     display: inline-block;
+
 }
 
 .header-list-contact:first-child {
@@ -353,6 +354,14 @@ button.current {
 .portfolio-list .portfolio-list-item:last-child {
     margin-right: 0;
 }
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* .work-list-title, .work-list-item {
     padding-left: 20px;
 } */
@@ -392,6 +401,9 @@ button.current {
  
 .content-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .content-list-item .content-list-title {
@@ -406,6 +418,16 @@ button.current {
 .content-list-item {
     display: flex;
     flex-basis: calc((100% - 30px * 4) / 4);
+}
+
+.content-list-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    height: 120px;
+    border-radius: 4px;
 }
 .about-us-item-title {
     margin-bottom: 10px;
@@ -443,9 +465,7 @@ button.current {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.section {
-    padding: 94px 0;
-}
+
 .img {
     display: block;
     max-width: 100%;
@@ -487,6 +507,10 @@ button.current {
     fill: currentColor;
 }
 
+.customers {
+    padding: 94px 0;
+}
+
 .customer-list-item {
     display: flex;
     justify-content: center;
@@ -498,5 +522,59 @@ button.current {
      
 }
 .customer-list-logo {
-   
+   width: calc(100% / 6 - 30px);
+   height: 92px;
+}
+
+.customer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    height: 92px;
+    fill: #AFB1B8;
+
+}
+.customer-icon:hover,
+.customer-icon:focus {
+    fill: #2196F3;
+    border: 1px solid #2196F3;
+
+}
+
+.customer-list-logo:not(:last-child) {
+    margin-right: 30px;
+}
+/* .social-media-icon-adress {
+    fill: currentColor;
+} */
+.social-media-title {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.social-media-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #fffefe;
+    background-color: #2F303A;
+    border-radius: 50%;
+}
+
+.social-media-link-footer:hover,
+.social-media-link-footer:focus {
+    background-color: #188CE8;
+}
+
+.social-media-link-adress:not(:last-child) {
+    margin-right: 10px;
 }
