@@ -91,7 +91,7 @@ header {
 }
 
 .navigation-container {
-    margin-right: 331px;
+    margin-right: 330px;
 }
 /* common styles */
 .logo {
@@ -164,9 +164,12 @@ header {
     line-height: 16px;
     color:var(--secondary-txt-cl);
     text-decoration: none;
-    padding: 31px 0;
-    
-   
+    padding: 31px 0;  
+}
+
+.social-media-icon-top {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .header-mail:hover, 
@@ -382,6 +385,17 @@ button.current {
     color:var(--secondary-txt-cl);
 }
 
+.container-footer {
+    display: flex;
+    align-items: center;
+
+
+}
+.footer-contacts {
+    margin-right: 70px;
+  
+}
+
 .footer-list {
    list-style-type: none;
 }
@@ -532,6 +546,7 @@ button.current {
     align-items: center;
     box-sizing: border-box;
     border: 1px solid #AFB1B8;
+    border-radius: 4px;
     height: 92px;
     fill: #AFB1B8;
 
@@ -550,6 +565,8 @@ button.current {
     fill: currentColor;
 } */
 .social-media-title {
+    padding: 0;
+    margin-bottom: 20px;
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
@@ -559,6 +576,7 @@ button.current {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .social-media-link-footer {
     display: flex;
     align-items: center;
@@ -566,7 +584,7 @@ button.current {
     width: 44px;
     height: 44px;
     color: #fffefe;
-    background-color: #2F303A;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
@@ -578,3 +596,14 @@ button.current {
 .social-media-link-adress:not(:last-child) {
     margin-right: 10px;
 }
+.footer-contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding: 31px 0;
+}
+
+ 
