@@ -414,8 +414,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(3px);
-    background-color: #2196F3;
+    backdrop-filter: blur(3px);  
+    background-color: rgba(33, 150, 243, 0.9);
     border-radius: 4px;
 
     transform: translateY(100%);
@@ -426,7 +426,7 @@ header {
     left: 0;
 
 }
-.portfolio-overlay-img:hover .portfolio-overlay {
+.portfolio-list-item:hover .portfolio-overlay {
     transform: translateY(0);
 }
 
@@ -446,8 +446,7 @@ header {
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    background-color: #2196F3;
-  
+   
     
 
 }
@@ -775,6 +774,8 @@ header {
     min-width: 528px;
     min-height: 581px;
     background-color: #FFFFFF; 
+    border-radius: 4px;
+    border: rgba(0, 0, 0, 0.1);
 
  }
  .modal-close-btn {
